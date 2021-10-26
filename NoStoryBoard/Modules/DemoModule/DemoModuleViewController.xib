@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DemoModuleViewController" customModule="NoStoryBoard" customModuleProvider="target">
+            <connections>
+                <outlet property="inputTextField" destination="fYm-9Q-fJT" id="8EY-0u-KfH"/>
+                <outlet property="view" destination="UPS-nF-wa9" id="4WN-hL-lNJ"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="UPS-nF-wa9">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="input" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fYm-9Q-fJT">
+                    <rect key="frame" x="32" y="244" width="350" height="34"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="34" id="dcl-3V-MDV"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g6w-K9-QDT">
+                    <rect key="frame" x="124" y="323" width="166" height="42"/>
+                    <color key="backgroundColor" systemColor="systemTealColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="42" id="UxJ-Lk-xS3"/>
+                    </constraints>
+                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="Say Hi" titleAlignment="center"/>
+                    <connections>
+                        <action selector="sayHiButtonPressed:" destination="-1" eventType="touchUpInside" id="GIf-23-4pe"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NuB-Ma-3ln">
+                    <rect key="frame" x="132" y="504" width="150" height="32"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="150" id="Dse-ej-AFL"/>
+                        <constraint firstAttribute="height" constant="32" id="Yn5-nn-259"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="filled" title="Next screen"/>
+                    <connections>
+                        <action selector="nextSceneButtonPressed:" destination="-1" eventType="touchUpInside" id="aAJ-6N-PK6"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="Ys4-qb-0rr"/>
+            <color key="backgroundColor" systemColor="systemYellowColor"/>
+            <constraints>
+                <constraint firstItem="NuB-Ma-3ln" firstAttribute="top" secondItem="g6w-K9-QDT" secondAttribute="bottom" constant="139" id="AV5-if-FcE"/>
+                <constraint firstItem="Ys4-qb-0rr" firstAttribute="trailing" secondItem="fYm-9Q-fJT" secondAttribute="trailing" constant="32" id="B7f-SR-eLy"/>
+                <constraint firstItem="g6w-K9-QDT" firstAttribute="leading" secondItem="Ys4-qb-0rr" secondAttribute="leading" constant="124" id="Mpw-S1-Gp6"/>
+                <constraint firstItem="g6w-K9-QDT" firstAttribute="top" secondItem="fYm-9Q-fJT" secondAttribute="bottom" constant="45" id="PzX-GK-0rG"/>
+                <constraint firstItem="fYm-9Q-fJT" firstAttribute="leading" secondItem="Ys4-qb-0rr" secondAttribute="leading" constant="32" id="UOT-eo-bvw"/>
+                <constraint firstItem="NuB-Ma-3ln" firstAttribute="centerX" secondItem="Ys4-qb-0rr" secondAttribute="centerX" id="bqt-Pd-Q8C"/>
+                <constraint firstItem="Ys4-qb-0rr" firstAttribute="trailing" secondItem="g6w-K9-QDT" secondAttribute="trailing" constant="124" id="fui-uR-RbU"/>
+                <constraint firstItem="fYm-9Q-fJT" firstAttribute="top" secondItem="Ys4-qb-0rr" secondAttribute="top" constant="200" id="oPR-o2-9Jr"/>
+            </constraints>
+            <point key="canvasLocation" x="-946.37681159420299" y="164.73214285714286"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemTealColor">
+            <color red="0.18823529411764706" green="0.69019607843137254" blue="0.7803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
